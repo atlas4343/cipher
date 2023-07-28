@@ -5,7 +5,7 @@ def ceaser(str1, key):
         for s in str1:
             s_ascii = ord(s)    #s_ascii is asciied s
             # if capital number
-            if s_ascii >=ord('A') and s_ascii <= ord('Z'):
+            if ord('A') <= s_ascii <= ord('Z'):
                 s_new_ascii = s_ascii + key #ceasered
                 #adjust number in range of capital number
                 if s_new_ascii > ord('Z'):
@@ -13,7 +13,7 @@ def ceaser(str1, key):
                 elif s_new_ascii < ord('A'):
                     s_new_ascii += 26
             # if lower number
-            elif s_ascii >=ord('a') and s_ascii <= ord('z'):
+            elif ord('a') <= s_ascii <= ord('z'):
                 s_new_ascii = s_ascii + key #ceasered
                 #adjust number in range of lower number
                 if s_new_ascii > ord('z'):
@@ -35,7 +35,7 @@ def disceaser(str1, key):
         for s in str1:
             s_ascii = ord(s)    #s_ascii is asciied s
             # if capital number
-            if s_ascii >=ord('A') and s_ascii <= ord('Z'):
+            if ord('A') <= s_ascii <= ord('Z'):
                 s_new_ascii = s_ascii - key #ceasered
                 #adjust number in range of capital number
                 if s_new_ascii > ord('Z'):
@@ -43,7 +43,7 @@ def disceaser(str1, key):
                 elif s_new_ascii < ord('A'):
                     s_new_ascii += 26
             # if lower number
-            elif s_ascii >=ord('a') and s_ascii <= ord('z'):
+            elif ord('a') <= and s_ascii <= ord('z'):
                 s_new_ascii = s_ascii - key #ceasered
                 #adjust number in range of lower number
                 if s_new_ascii > ord('z'):
